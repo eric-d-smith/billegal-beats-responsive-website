@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Glacial Indifference Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Glacial Indifference Regular'), url('fonts/GlacialIndifference-Regular.woff') format('woff');
+    }
+    
+@font-face {
+    font-family: 'Glacial Indifference Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Glacial Indifference Bold'), url('fonts/GlacialIndifference-Bold.woff') format('woff');
+    }
+
+// BEGIN navbar JavaScript / CSS
+ul a:hover{
+  color: #FFF !important;
+}
+nav li{
+    text-align: center;
+    text-transform: uppercase;
+}
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: #FFF;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+    color: #FFF !important;
+}
+// END navbar JavaScript / CSS
+
+.bg-black {
+    background-color: #000;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: rgb(168, 168, 168);
+    font-family: GlacialIndifference-Bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    padding: 1em;
+}
