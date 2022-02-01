@@ -12,30 +12,22 @@
     src: local('Glacial Indifference Bold'), url('fonts/GlacialIndifference-Bold.woff') format('woff');
     }
 
-// BEGIN navbar JavaScript / CSS
-ul a:hover{
-  color: #FFF !important;
-}
-nav li{
-    text-align: center;
-    text-transform: uppercase;
-}
-li > a:after{
-    content: '';
-    display: block;
-    height: 1.5px;
-    background: #FFF;
-    transform: scaleX(0);
-    transition: transform .3s;
-}
-li > a:hover:after{
-    transform: scaleX(1);
-    transition: transform .3s;
-}
-.active{
-    color: #FFF !important;
-}
-// END navbar JavaScript / CSS
+body, html {
+    height: 100%; 
+  }
+
+.bg { 
+    /* The image used */
+    background-image: url("/img/BB-hero.jpg");
+  
+    /* Full height */
+    height: 100%; 
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 .bg-black {
     background-color: #000;
@@ -48,3 +40,28 @@ li > a:hover:after{
     letter-spacing: 0.1em;
     padding: 1em;
 }
+
+/* BEGIN navbar JavaScript / CSS */
+ul a:hover{
+    color: #FFF !important;
+  }
+  nav li{
+      text-align: center;
+      text-transform: uppercase;
+  }
+  li > a:after{
+      content: '';
+      display: block;
+      height: 1.5px;
+      background: #FFF;
+      transform: scaleX(0);
+      transition: transform .3s;
+  }
+  li > a:hover:after{
+      transform: scaleX(1);
+      transition: transform .3s;
+  }
+  .active{
+      color: #FFF !important;
+  }
+  /* END navbar JavaScript / CSS */

@@ -12,6 +12,34 @@
   src: local("Glacial Indifference Bold"), url("fonts/GlacialIndifference-Bold.woff") format("woff");
 }
 
+body, html {
+  height: 100%;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("/img/BB-hero.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #a8a8a8;
+  font-family: GlacialIndifference-Bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 1em;
+}
+
+/* BEGIN navbar JavaScript / CSS */
 ul a:hover {
   color: #FFF !important;
 }
@@ -47,15 +75,5 @@ li > a:hover:after {
   color: #FFF !important;
 }
 
-.bg-black {
-  background-color: #000;
-}
-
-.navbar .navbar-nav .nav-link {
-  color: #a8a8a8;
-  font-family: GlacialIndifference-Bold;
-  font-size: 1em;
-  letter-spacing: 0.1em;
-  padding: 1em;
-}
+/* END navbar JavaScript / CSS */
 /*# sourceMappingURL=styles.css.map */
