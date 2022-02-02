@@ -16,9 +16,20 @@ body, html {
   height: 100%;
 }
 
-.bg {
+.bg-lg {
   /* The image used */
-  background-image: url("/img/BB-hero.jpg");
+  background-image: url("/img/BB-hero-lg.jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-xs {
+  /* The image used */
+  background-image: url("/img/BB-hero-xs.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -29,6 +40,31 @@ body, html {
 
 .bg-black {
   background-color: #000;
+}
+
+.hamburger .line {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-2.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+#hamburger-2.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px);
+  transform: translateY(-13px);
 }
 
 .navbar .navbar-nav .nav-link {

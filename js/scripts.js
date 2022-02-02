@@ -10,3 +10,11 @@ for (let i = 0; i < numClass; i++) {
     }, false);
 }
 // END navbar animation
+
+// BEGIN hamburger animation
+$(document).ready(function(){
+    $(".hamburger").click(function(){
+      $(this).toggleClass("is-active");
+    });
+  });
+// END hamburger animation
