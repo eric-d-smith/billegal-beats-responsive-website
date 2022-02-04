@@ -76,12 +76,27 @@ body, html {
     transform: translateY(-13px);
   }
 
+.hero-title {
+    font-family: GlacialIndifference-Bold;
+    font-size: 5em;
+    letter-spacing: .05em;
+    line-height: 0.8;
+    margin: 120px 0px 0px 40px;
+}
+
 .navbar .navbar-nav .nav-link {
     color: rgb(168, 168, 168);
     font-family: GlacialIndifference-Bold;
     font-size: 1em;
     letter-spacing: 0.1em;
     padding: 1em;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
 }
 
 /* BEGIN navbar JavaScript / CSS */
