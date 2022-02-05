@@ -1,35 +1,25 @@
 @font-face {
-  font-family: 'Glacial Indifference Regular';
+  font-family: "Glacial Indifference Regular";
   font-style: normal;
   font-weight: normal;
   src: local("Glacial Indifference Regular"), url("fonts/GlacialIndifference-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Glacial Indifference Bold';
+  font-family: "Glacial Indifference Bold";
   font-style: normal;
   font-weight: normal;
   src: local("Glacial Indifference Bold"), url("fonts/GlacialIndifference-Bold.woff") format("woff");
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
-.bg-lg {
+.bg-hero {
   /* The image used */
-  background-image: url("/img/BB-hero-lg.jpg");
-  /* Full height */
-  height: 100%;
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.bg-xs {
-  /* The image used */
-  background-image: url("/img/BB-hero-xs.jpg");
+  background-image: url("/img/background-hero.jpg");
   /* Full height */
   height: 100%;
   /* Center and scale the image nicely */
@@ -67,12 +57,28 @@ body, html {
   transform: translateY(-13px);
 }
 
-.hero-title {
+.hero-sub-title-xl {
+  font-family: GlacialIndifference-Regular;
+  font-size: 2em;
+  letter-spacing: 0.025em;
+  line-height: auto;
+  padding: 64% 0 0 0;
+  left: 60%;
+  z-index: 10;
+}
+
+.hero-title-xl {
   font-family: GlacialIndifference-Bold;
-  font-size: 5em;
-  letter-spacing: .05em;
+  font-size: 10em;
+  letter-spacing: 0em;
   line-height: 0.8;
-  margin: 120px 0px 0px 40px;
+  padding: 35% 0 0 0;
+  right: 14%;
+  z-index: 10;
+}
+
+.my-logo {
+  margin-top: 12rem;
 }
 
 .navbar .navbar-nav .nav-link {
@@ -93,7 +99,7 @@ body, html {
 
 /* BEGIN navbar JavaScript / CSS */
 ul a:hover {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 nav li {
@@ -102,30 +108,102 @@ nav li {
 }
 
 li > a:after {
-  content: '';
+  content: "";
   display: block;
   height: 1.5px;
-  background: #FFF;
+  background: #fff;
   -webkit-transform: scaleX(0);
           transform: scaleX(0);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 li > a:hover:after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .active {
-  color: #FFF !important;
+  color: #fff !important;
 }
 
 /* END navbar JavaScript / CSS */
+/* BEGIN bouncing CSS arrow fade on scroll */
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+
+/*
+.container {
+  height: 100vh;
+}
+.below {
+  height: 100vh;
+}
+*/
+.ourMission {
+  display: block;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.arrow {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px;
+  /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+/* END bouncing CSS arrow fade on scroll */
 /*# sourceMappingURL=styles.css.map */

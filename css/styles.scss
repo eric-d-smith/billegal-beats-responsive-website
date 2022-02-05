@@ -1,125 +1,221 @@
 @font-face {
-    font-family: 'Glacial Indifference Regular';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Glacial Indifference Regular'), url('fonts/GlacialIndifference-Regular.woff') format('woff');
-    }
-    
-@font-face {
-    font-family: 'Glacial Indifference Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Glacial Indifference Bold'), url('fonts/GlacialIndifference-Bold.woff') format('woff');
-    }
-
-body, html {
-    height: 100%; 
-  }
-
-.bg-lg { 
-    /* The image used */
-    background-image: url("/img/BB-hero-lg.jpg");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-.bg-xs { 
-    /* The image used */
-    background-image: url("/img/BB-hero-xs.jpg");
-  
-    /* Full height */
-    height: 100%; 
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-.bg-black {
-    background-color: #000;
+  font-family: "Glacial Indifference Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Glacial Indifference Regular"), url("fonts/GlacialIndifference-Regular.woff") format("woff");
 }
 
-.hamburger .line{
-    width: 36px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: #ecf0f1;
-    display: block;
-    margin: 8px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hamburger:hover{
-    cursor: pointer;
-  }
+@font-face {
+  font-family: "Glacial Indifference Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Glacial Indifference Bold"), url("fonts/GlacialIndifference-Bold.woff") format("woff");
+}
 
-  #hamburger-2.is-active .line:nth-child(1){
-    -webkit-transform: translateY(13px);
-    -ms-transform: translateY(13px);
-    -o-transform: translateY(13px);
-    transform: translateY(13px);
-  }
-  
-  #hamburger-2.is-active .line:nth-child(3){
-    -webkit-transform: translateY(-13px);
-    -ms-transform: translateY(-13px);
-    -o-transform: translateY(-13px);
-    transform: translateY(-13px);
-  }
+body,
+html {
+  height: 100%;
+}
 
-.hero-title {
-    font-family: GlacialIndifference-Bold;
-    font-size: 5em;
-    letter-spacing: .05em;
-    line-height: 0.8;
-    margin: 120px 0px 0px 40px;
+.bg-hero {
+  /* The image used */
+  background-image: url("/img/background-hero.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.hamburger .line {
+  width: 36px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #ecf0f1;
+  display: block;
+  margin: 8px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+  cursor: pointer;
+}
+
+#hamburger-2.is-active .line:nth-child(1) {
+  -webkit-transform: translateY(13px);
+  -ms-transform: translateY(13px);
+  -o-transform: translateY(13px);
+  transform: translateY(13px);
+}
+
+#hamburger-2.is-active .line:nth-child(3) {
+  -webkit-transform: translateY(-13px);
+  -ms-transform: translateY(-13px);
+  -o-transform: translateY(-13px);
+  transform: translateY(-13px);
+}
+
+.hero-sub-title-xl {
+  font-family: GlacialIndifference-Regular;
+  font-size: 2em;
+  letter-spacing: 0.025em;
+  line-height: auto;
+  padding: 64% 0 0 0;
+  left: 60%;
+  z-index: 10;
+}
+
+.hero-title-xl {
+  font-family: GlacialIndifference-Bold;
+  font-size: 10em;
+  letter-spacing: 0em;
+  line-height: 0.8;
+  padding: 35% 0 0 0;
+  right: 14%;
+  z-index: 10;
+}
+
+.my-logo {
+  margin-top: 12rem;
 }
 
 .navbar .navbar-nav .nav-link {
-    color: rgb(168, 168, 168);
-    font-family: GlacialIndifference-Bold;
-    font-size: 1em;
-    letter-spacing: 0.1em;
-    padding: 1em;
+  color: rgb(168, 168, 168);
+  font-family: GlacialIndifference-Bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  padding: 1em;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 /* BEGIN navbar JavaScript / CSS */
-ul a:hover{
-    color: #FFF !important;
+ul a:hover {
+  color: #fff !important;
+}
+nav li {
+  text-align: center;
+  text-transform: uppercase;
+}
+li > a:after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background: #fff;
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+li > a:hover:after {
+  transform: scaleX(1);
+  transition: transform 0.3s;
+}
+.active {
+  color: #fff !important;
+}
+/* END navbar JavaScript / CSS */
+
+/* BEGIN bouncing CSS arrow fade on scroll */
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
   }
-  nav li{
-      text-align: center;
-      text-transform: uppercase;
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
-  li > a:after{
-      content: '';
-      display: block;
-      height: 1.5px;
-      background: #FFF;
-      transform: scaleX(0);
-      transition: transform .3s;
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
   }
-  li > a:hover:after{
-      transform: scaleX(1);
-      transition: transform .3s;
+}
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
   }
-  .active{
-      color: #FFF !important;
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
-  /* END navbar JavaScript / CSS */
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+/*
+.container {
+  height: 100vh;
+}
+.below {
+  height: 100vh;
+}
+*/
+.ourMission {
+  display: block;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.arrow {
+  position: absolute;
+  bottom: 12%;
+  left: 50%;
+  margin-left: -20px;
+  width: 40px;
+  height: 60px; /*change with size of arrow to make sit on bottom */
+  /*   background-image: url(); */
+  /*   background-size: contain; */
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+/* END bouncing CSS arrow fade on scroll */
