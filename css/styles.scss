@@ -17,6 +17,7 @@ html {
   height: 100%;
 }
 
+// BEGIN smooth scrolling
 html {
   scroll-behavior: smooth;
 }
@@ -26,6 +27,7 @@ html {
 		scroll-behavior: auto;
 	}
 }
+// END smooth scrolling
 
 .bg-hero {
   /* The image used */
@@ -44,6 +46,7 @@ html {
   background-color: #000;
 }
 
+// BEGIN hamburger
 .hamburger .line {
   width: 36px;
   height: 4px;
@@ -73,6 +76,7 @@ html {
   -o-transform: translateY(-13px);
   transform: translateY(-13px);
 }
+// END hamburger
 
 .hero-sub-title-xl {
   font-family: GlacialIndifference-Regular;
@@ -94,7 +98,7 @@ html {
   z-index: 10;
 }
 
-.my-logo {
+.mt-logo {
   margin-top: 12rem;
 }
 

@@ -19,12 +19,9 @@ $(document).ready(function(){
   });
 // END hamburger animation
 
-// BEGIN bouncing arrow
-// Bouncing arrow bottom of full screen
-// Different arrow choices from Font Awesome
-// Fades away as you scroll down
+// BEGIN bouncing arrow bottom of full screen. Fades when scrolling.
 $(window).scroll(function(){
   $(".arrow").css("opacity", 1 - $(window).scrollTop() / 250); 
 //250 is fade pixels
 });
-// END bouncing arrow
+// END bouncing arrow bottom of full screen. Fades when scrolling.
