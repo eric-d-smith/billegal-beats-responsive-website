@@ -17,6 +17,16 @@ html {
   height: 100%;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .bg-hero {
   /* The image used */
   background-image: url("/img/background-hero.jpg");
@@ -206,4 +216,6 @@ li > a:hover:after {
 }
 
 /* END bouncing CSS arrow fade on scroll */
+/* BEGIN smooth anchor scrolling */
+/* END smooth anchor scrolling */
 /*# sourceMappingURL=styles.css.map */
