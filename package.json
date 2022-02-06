@@ -1,7 +1,7 @@
 {
-  "name": "nucampsite",
+  "name": "billegal_beats_website",
   "version": "1.0.0",
-  "description": "This is a website for the fictional campsites review site Nucamp",
+  "description": "This is a website for the record label creating infastructure around left-field glitch music.",
   "main": "index.html",
   "scripts": {
     "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
@@ -11,7 +11,7 @@
     "lite": "lite-server",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html"
+    "usemin": "usemin demos.html -d dist --htmlmin -o dist/demos.html && usemin index.html -d dist --htmlmin -o dist/index.html && usemin releases.html -d dist --htmlmin -o dist/releases.html && usemin shop.html -d dist --htmlmin -o dist/shop.html && usemin tour.html -d dist --htmlmin -o dist/tour.html"
   },
   "author": "Eric Smith",
   "license": "ISC",
