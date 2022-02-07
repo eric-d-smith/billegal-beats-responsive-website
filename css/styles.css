@@ -28,14 +28,12 @@ html {
 }
 
 .bg-hero {
-  /* The image used */
   background-image: url("/img/background-hero.jpg");
-  /* Full height */
   height: 100%;
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow-x: hidden;
 }
 
 .bg-black {
@@ -79,16 +77,95 @@ html {
 
 .hero-title-xl {
   font-family: GlacialIndifference-Bold;
-  font-size: 10em;
+  font-size: 7.25em;
   letter-spacing: 0em;
   line-height: 0.8;
-  padding: 35% 0 0 0;
-  right: 14%;
+  padding: 36% 0 0 0;
+  z-index: 10;
+}
+
+.hero-sub-title-lg {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.5em;
+  letter-spacing: 0.025em;
+  line-height: auto;
+  padding: 67% 0 0 0;
+  left: 60%;
+  z-index: 10;
+}
+
+.hero-title-lg {
+  font-family: GlacialIndifference-Bold;
+  font-size: 6em;
+  letter-spacing: 0em;
+  line-height: 0.8;
+  padding: 40% 0 0 0;
+  z-index: 10;
+}
+
+.hero-sub-title-md {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.3em;
+  letter-spacing: 0.025em;
+  line-height: 1.3;
+  padding: 73% 0 0 0;
+  left: 60%;
+  z-index: 10;
+}
+
+.hero-title-md {
+  font-family: GlacialIndifference-Bold;
+  font-size: 4.5em;
+  letter-spacing: 0em;
+  line-height: 0.85;
+  padding: 46% 0 0 0;
+  z-index: 10;
+}
+
+.hero-sub-title-sm {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.7em;
+  letter-spacing: 0.025em;
+  line-height: 1.3;
+  padding-top: 148%;
+  z-index: 10;
+}
+
+.hero-title-sm {
+  font-family: GlacialIndifference-Bold;
+  font-size: 5.5em;
+  letter-spacing: 0em;
+  line-height: 0.85;
+  padding-top: 22.5%;
+  left: 8.4%;
+  z-index: 10;
+}
+
+.hero-sub-title-xs {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.7em;
+  letter-spacing: 0.025em;
+  line-height: 1.3;
+  padding-top: 148%;
+  z-index: 10;
+}
+
+.hero-title-xs {
+  font-family: GlacialIndifference-Bold;
+  font-size: 5em;
+  letter-spacing: 0em;
+  line-height: 0.85;
+  padding-top: 22.5%;
+  left: 9.6%;
   z-index: 10;
 }
 
 .mt-logo {
   margin-top: 12rem;
+}
+
+.mt-logo-xs {
+  margin-top: 50%;
 }
 
 .navbar .navbar-nav .nav-link {
