@@ -146,17 +146,19 @@
     </div>
 
     <!-- arrow bounce / anchor scrolling -->
-    <div class="arrow-xs bounce d-none d-block d-md-none"><a href="#ourMission"
-            class="ourMission fa fa-angle-down fa-5x"></a></div>
-
-    <div class="arrow bounce d-none d-md-block"><a href="#ourMission" class="ourMission fa fa-angle-down fa-5x"></a>
+    <div class="arrow-xs bounce d-none d-block d-lg-none">
+        <a href="#ourMissionXS" class="ourMission fa fa-angle-down fa-5x"></a>
     </div>
 
-    <!-- Our Mission section -->
-    <div class="container-fluid h-75" id="ourMission">
-        <div class="row h-100 bg-lgray">
-            <div class="col-6 bg-dgray d-flex align-items-center">
-                <div class="w-50 mx-auto d-block pb-5">
+    <div class="arrow bounce d-none d-lg-block">
+        <a href="#ourMissionLG" class="ourMission fa fa-angle-down fa-5x"></a>
+    </div>
+
+    <!-- Our Mission section for XS, SM, and MD screens -->
+    <div class="container-fluid h-100 d-none d-block d-lg-none" id="ourMissionXS">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 bg-dgray d-flex align-items-center pb-5">
+                <div class="w-50 mx-auto d-block py-5">
                     <h1 class="mission-title text-white">
                         OUR MISSION
                     </h1>
@@ -174,45 +176,89 @@
                     </p>
                 </div>
             </div>
-            <div class="col-6 my-auto d-flex align-items-center">
-                <img class="mx-auto d-block img-fluid" src="img/billegal-illustration.svg"
-                    alt="Billegal Illustration" />
+            <div class="col-12 col-lg-6 bg-lgray d-flex pb-2">
+                <div class="m-auto d-block p-5 bg-lgray">
+                    <img class="img-fluid" src="img/billegal-illustration.svg" alt="Billegal Illustration" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Our Mission section for LG and XL screens -->
+    <div class="container-fluid h-75 d-none d-lg-block" id="ourMissionLG">
+        <div class="row h-100">
+            <div class="col-12 col-lg-6 bg-dgray d-flex align-items-center pb-5">
+                <div class="w-50 mx-auto d-block py-5">
+                    <h1 class="mission-title text-white">
+                        OUR MISSION
+                    </h1>
+                    <p class="mission-body text-white">For years, unconventional glitch music hasn’t had any real
+                        infrastructure around it, which
+                        doesn’t
+                        really allow the genre to grow.
+                    </p>
+                    <p class="mission-body text-white">
+                        Strong communities develop out of people being both interested in a certain thing and then being
+                        rewarded for participating in said thing.
+                    </p>
+                    <p class="mission-body text-white">
+                        This isn’t necessarily the case with IDM and glitch music. Our goal is to try and fix that!
+                    </p>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-lgray my-auto d-flex align-items-center h-100 pb-5">
+                <div class="mx-auto d-block p-5 bg-lgray">
+                    <img class="img-fluid" src="img/billegal-illustration.svg" alt="Billegal Illustration" />
+                </div>
             </div>
         </div>
     </div>
 
     <!-- Releases section -->
     <div class="container-fluid" id="releases">
-        <div class="row p-5 bg-mgray">
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+        <div class="row bg-mgray pt-5 pl-5 pr-5">
+            <div class="col-12 col-md-4 bg-mgray mx-auto d-block">
                 <img class="img-fluid" src="img/albums/Musin-The-Edge-Of-Chaos-EP.jpeg"
                     alt="Bakkar - Endless Beginning EP" />
             </div>
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+            <div class="col-12 col-md-4 bg-mgray mx-auto d-block">
                 <img class="img-fluid" src="img/albums/Le-Perche-Oreille-Hyver-EP.jpeg"
                     alt="Bakkar - Endless Beginning EP" />
             </div>
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+            <div class="col-12 col-md-4 bg-mgray mx-auto d-block">
                 <img class="img-fluid" src="img/albums/Sorcinet-Glitch-In-The-Climate.jpeg"
                     alt="Bakkar - Endless Beginning EP" />
             </div>
         </div>
-        <div class="row p-5 bg-mgray">
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+        <div class="row bg-mgray pt-5 pl-5 pr-5">
+            <div class="col-12 col-md-4 bg-mgray w-75 mx-auto d-block">
                 <img class="img-fluid" src="img/albums/Bakkar-Endless-Beginning-EP-Billegal-Beats.jpeg"
                     alt="Bakkar - Endless Beginning EP" />
             </div>
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+            <div class="col-12 col-md-4 bg-mgray w-75 mx-auto d-block">
                 <img class="img-fluid" src="img/albums/ZZY-Everything-Is-Wrong.jpeg"
                     alt="Bakkar - Endless Beginning EP" />
             </div>
-            <div class="col-4 bg-mgray w-75 mx-auto d-block px-4 py-2">
+            <div class="col-12 col-md-4 bg-mgray w-75 mx-auto d-block">
                 <img class="img-fluid" src="img/albums/Fennec-III-Dozo-Sol.jpeg" alt="Bakkar - Endless Beginning EP" />
             </div>
         </div>
         <div class="row">
-            <div class="col bg-mgray">
-                <a class="btn-releases btn bg-black text-white btn-lg btn-block w-25 mx-auto rounded-0 p-4" role="button" href="releases.html">
+            <div class="col bg-mgray d-none d-block d-sm-none">
+                <a class="btn-releases btn bg-black text-white btn-lg btn-block w-75 mx-auto rounded-0 p-4"
+                    role="button" href="releases.html">
+                    MORE RELEASES
+                </a>
+            </div>
+            <div class="col bg-mgray d-none d-sm-block d-xl-none">
+                <a class="btn-releases btn bg-black text-white btn-lg btn-block w-50 mx-auto rounded-0 p-4"
+                    role="button" href="releases.html">
+                    MORE RELEASES
+                </a>
+            </div>
+            <div class="col bg-mgray d-none d-xl-block">
+                <a class="btn-releases btn bg-black text-white btn-lg btn-block w-25 mx-auto rounded-0 p-4"
+                    role="button" href="releases.html">
                     MORE RELEASES
                 </a>
             </div>
