@@ -66,6 +66,10 @@ html {
   background-color: #414042;
 }
 
+.bg-releases {
+  background-color: #818285;
+}
+
 .btn-releases {
   font-family: GlacialIndifference-Bold;
   font-size: 1.25em;
