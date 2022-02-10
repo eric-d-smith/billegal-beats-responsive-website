@@ -20,6 +20,8 @@ html {
 // BEGIN smooth scrolling
 html {
   scroll-behavior: smooth;
+  // bandaid "fix" for secondary copy on landing page
+  overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -101,6 +103,28 @@ a.EP-hover:hover {
   margin: 4em 0 4em 0;
 }
 
+.btn-footer {
+  font-family: GlacialIndifference-Bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 4em 0 4em 0;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
+}
+
+.btn-footer-XL {
+  font-family: GlacialIndifference-Bold;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+  margin: 4em 0 4em 0;
+  padding-top: 6em;
+  padding-bottom: 6em;
+}
+
+.foot-pad {
+  padding-left: 100px;
+}
+
 .footer-title {
   font-family: GlacialIndifference-Bold;
   font-size: 1.25em;
@@ -111,6 +135,7 @@ a.EP-hover:hover {
 .footer-body {
   font-family: GlacialIndifference-Regular;
   font-size: 1.25em;
+  line-height: 1.25;
 }
 
 .footer-body2 {
@@ -283,6 +308,12 @@ a.EP-hover:hover {
   box-shadow: none;
 }
 
+.ourMission {
+  display: block;
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 .underline {
   padding-bottom: 4px;
   border-bottom: 1px solid white;
@@ -409,11 +440,7 @@ li > a:hover:after {
   height: 100vh;
 }
 */
-.ourMission {
-  display: block;
-  color: #fff !important;
-  text-decoration: none !important;
-}
+
 .arrow {
   position: absolute;
   bottom: 12%;
