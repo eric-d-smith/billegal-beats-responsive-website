@@ -79,6 +79,12 @@ a.EP-hover:hover {
   background-color: #818285;
 }
 
+.bg-signup {
+  background-color: #818285;
+  margin-left: 0.9em;
+  margin-right: 0.9em;
+}
+
 .btn-releases {
   font-family: GlacialIndifference-Bold;
   font-size: 1.25em;
@@ -89,7 +95,7 @@ a.EP-hover:hover {
 .footer-title {
   font-family: GlacialIndifference-Bold;
   font-size: 1.25em;
-  letter-spacing: 3px;
+  letter-spacing: .05em;
   line-height: 0.9;
 }
 
