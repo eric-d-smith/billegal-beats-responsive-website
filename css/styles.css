@@ -27,6 +27,15 @@ html {
   }
 }
 
+a.EP-hover {
+  color: white;
+}
+
+a.EP-hover:hover {
+  color: #b2b2b2;
+  text-decoration: none;
+}
+
 .album {
   font-family: GlacialIndifference-Regular;
   font-size: 1.5em;
@@ -77,13 +86,22 @@ html {
   margin: 4em 0 4em 0;
 }
 
-a.EP-hover {
-  color: white;
+.footer-title {
+  font-family: GlacialIndifference-Bold;
+  font-size: 1.25em;
+  letter-spacing: 3px;
+  line-height: 0.9;
 }
 
-a.EP-hover:hover {
-  color: #b2b2b2;
-  text-decoration: none;
+.footer-body {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.25em;
+}
+
+.footer-body2 {
+  font-family: GlacialIndifference-Regular;
+  font-size: 1.1em;
+  letter-spacing: .05em;
 }
 
 .hamburger .line {
@@ -240,6 +258,11 @@ a.EP-hover:hover {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.underline {
+  padding-bottom: 4px;
+  border-bottom: 1px solid white;
 }
 
 /* width */
