@@ -1,15 +1,6 @@
-// @font-face {
-//   font-family: "Glacial Indifference Regular";
-//   font-style: normal;
-//   font-weight: normal;
-//   src: local("Glacial Indifference Regular"), url("fonts/GlacialIndifference-Regular.woff") format("woff");
-// }
-
-// @font-face {
-//   font-family: "Glacial Indifference Bold";
-//   font-style: normal;
-//   font-weight: normal;
-//   src: local("Glacial Indifference Bold"), url("fonts/GlacialIndifference-Bold.woff") format("woff");
+// Overflow testing (w/ JavaScript)
+// * {
+//   outline: solid 1px red;
 // }
 
 body,
@@ -20,8 +11,6 @@ html {
 // BEGIN smooth scrolling
 html {
   scroll-behavior: smooth;
-  // bandaid "fix" for secondary copy on landing page
-  overflow-x: hidden;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
@@ -65,9 +54,6 @@ a.EP-hover:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
-  // bandaid "fix" for secondary copy on landing page
-  overflow-x: hidden;
 }
 
 .bg-black {
@@ -182,8 +168,8 @@ a.EP-hover:hover {
   font-size: 2em;
   letter-spacing: 0.025em;
   line-height: auto;
-  padding: 55% 0 0 0;
-  left: 60%;
+  padding: 55% 0% 0% 60%;
+  // left: 60%;
   z-index: 10;
 }
 
@@ -192,7 +178,7 @@ a.EP-hover:hover {
   font-size: 7.25em;
   letter-spacing: 0em;
   line-height: 0.8;
-  padding: 26% 0 0 0;
+  padding-top: 26%;
   z-index: 10;
 }
 
@@ -201,8 +187,8 @@ a.EP-hover:hover {
   font-size: 1.5em;
   letter-spacing: 0.025em;
   line-height: auto;
-  padding: 57% 0 0 0;
-  left: 60%;
+  padding: 57% 0% 0% 60%;
+  // left: 60%;
   z-index: 10;
 }
 
@@ -220,8 +206,8 @@ a.EP-hover:hover {
   font-size: 1.3em;
   letter-spacing: 0.025em;
   line-height: 1.3;
-  padding: 59% 0 0 0;
-  left: 60%;
+  padding: 59% 0% 0% 60%;
+  // left: 60%;
   z-index: 10;
 }
 
@@ -248,8 +234,8 @@ a.EP-hover:hover {
   font-size: 5.5em;
   letter-spacing: 0em;
   line-height: 0.85;
-  padding-top: 7.5%;
-  left: 8.4%;
+  padding: 7.5% 0% 0% 8.4%;
+  // left: 8.4%;
   z-index: 10;
 }
 
@@ -267,8 +253,8 @@ a.EP-hover:hover {
   font-size: 5em;
   letter-spacing: 0em;
   line-height: 0.85;
-  padding-top: 7.5%;
-  left: 9.6%;
+  padding: 7.5% 0% 0% 9.6%;
+  // left: 9.6%;
   z-index: 10;
 }
 // END responsive hero copy

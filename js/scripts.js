@@ -25,3 +25,16 @@ $(window).scroll(function(){
 //250 is fade pixels
 });
 // END bouncing arrow bottom of full screen. Fades when scrolling.
+
+// BEGIN testing for overflow issues. * in CSS adds red border.
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+  document.querySelectorAll('*'),
+  function(el) {
+    if (el.offsetWidth > docWidth) {
+      console.log(el);
+    }
+  }
+);
+// END testing for overflow issues. * in CSS adds red border.
