@@ -1,17 +1,3 @@
-@font-face {
-  font-family: "Glacial Indifference Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Glacial Indifference Regular"), url("fonts/GlacialIndifference-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Glacial Indifference Bold";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Glacial Indifference Bold"), url("fonts/GlacialIndifference-Bold.woff") format("woff");
-}
-
 body,
 html {
   height: 100%;
@@ -38,14 +24,14 @@ a.EP-hover:hover {
 }
 
 .album {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.5em;
   letter-spacing: 0.075em;
   line-height: 1.3;
 }
 
 .artist {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 2em;
   letter-spacing: 0.1em;
   line-height: 1.3;
@@ -87,14 +73,14 @@ a.EP-hover:hover {
 }
 
 .btn-releases {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 1.25em;
   letter-spacing: 0.1em;
   margin: 4em 0 4em 0;
 }
 
 .btn-footer {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 1em;
   letter-spacing: 0.1em;
   margin: 4em 0 4em 0;
@@ -103,7 +89,7 @@ a.EP-hover:hover {
 }
 
 .btn-footer-XL {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 1em;
   letter-spacing: 0.1em;
   margin: 4em 0 4em 0;
@@ -116,20 +102,20 @@ a.EP-hover:hover {
 }
 
 .footer-title {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 1.25em;
   letter-spacing: .05em;
   line-height: 0.9;
 }
 
 .footer-body {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.25em;
   line-height: 1.25;
 }
 
 .footer-body2 {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.1em;
   letter-spacing: .05em;
 }
@@ -160,7 +146,7 @@ a.EP-hover:hover {
 }
 
 .hero-sub-title-xl {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 2em;
   letter-spacing: 0.025em;
   line-height: auto;
@@ -170,7 +156,7 @@ a.EP-hover:hover {
 }
 
 .hero-title-xl {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 7.25em;
   letter-spacing: 0em;
   line-height: 0.8;
@@ -179,7 +165,7 @@ a.EP-hover:hover {
 }
 
 .hero-sub-title-lg {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.5em;
   letter-spacing: 0.025em;
   line-height: auto;
@@ -189,7 +175,7 @@ a.EP-hover:hover {
 }
 
 .hero-title-lg {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 6em;
   letter-spacing: 0em;
   line-height: 0.8;
@@ -198,7 +184,7 @@ a.EP-hover:hover {
 }
 
 .hero-sub-title-md {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.3em;
   letter-spacing: 0.025em;
   line-height: 1.3;
@@ -208,7 +194,7 @@ a.EP-hover:hover {
 }
 
 .hero-title-md {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 4.5em;
   letter-spacing: 0em;
   line-height: 0.85;
@@ -217,7 +203,7 @@ a.EP-hover:hover {
 }
 
 .hero-sub-title-sm {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.7em;
   letter-spacing: 0.025em;
   line-height: 1.3;
@@ -226,7 +212,7 @@ a.EP-hover:hover {
 }
 
 .hero-title-sm {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 5.5em;
   letter-spacing: 0em;
   line-height: 0.85;
@@ -236,7 +222,7 @@ a.EP-hover:hover {
 }
 
 .hero-sub-title-xs {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.7em;
   letter-spacing: 0.025em;
   line-height: 1.3;
@@ -245,7 +231,7 @@ a.EP-hover:hover {
 }
 
 .hero-title-xs {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 5em;
   letter-spacing: 0em;
   line-height: 0.85;
@@ -255,14 +241,14 @@ a.EP-hover:hover {
 }
 
 .mission-title {
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 2em;
   letter-spacing: 3px;
   line-height: 0.9;
 }
 
 .mission-body {
-  font-family: GlacialIndifference-Regular;
+  font-family: GlacialIndifferenceRegular;
   font-size: 1.25em;
 }
 
@@ -276,7 +262,7 @@ a.EP-hover:hover {
 
 .navbar .navbar-nav .nav-link {
   color: #a8a8a8;
-  font-family: GlacialIndifference-Bold;
+  font-family: GlacialIndifferenceBold;
   font-size: 1em;
   letter-spacing: 0.1em;
   padding: 1em;

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- scroll-behavior for legacy browsers that don't support custom CSS properties -->
+<html lang="en" style="scroll-behavior: smooth;">
 
 <head>
     <!-- Required meta tags always come first -->
@@ -7,6 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- build:css css/main.css -->
+
+    <!-- Any polyfill to enable smoothscroll for the JavaScript APIs -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <!-- This package, to apply the smoothscroll to anchor links -->
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
@@ -19,7 +26,7 @@
 
     <!-- endbuild -->
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css"/>
 
     <title>Billegal Beats</title>
 
