@@ -48,7 +48,7 @@
         <div class="collapse navbar-collapse" id="billegalNavbar">
             <ul class="navbar-nav mx-auto text-white d-flex align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="#releases">RELEASES</a>
+                    <a class="nav-link" href="releases.html">RELEASES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="tour.html">TOUR</a>
@@ -56,7 +56,10 @@
                 <a class="px-3 py-2 d-none d-sm-block" href="#"><img src="img/logo.svg" alt="Billegal Beats" width="50"
                         height="50" /></a>
                 <li class="nav-item">
-                    <a class="nav-link" href="demos.html">DEMOS</a>
+                    <a class="nav-link d-none d-xl-block" href="#demosXL">DEMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-block d-xl-none" href="#demos">DEMOS</a>
                 </li>
                 <li class="nav-item mr-4 d-none d-sm-block">
                     <a class="nav-link" href="shop.html">SHOP</a>
@@ -320,7 +323,7 @@
     </div>
 
     <!-- Submit Demo / Email Subscription sections for XS, SM, MD, and LG screens -->
-    <div class="container-fluid d-none d-block d-xl-none" id="ourMissionXS">
+    <div class="container-fluid d-none d-block d-xl-none" id="demos">
         <div class="row h-100">
             <div class="col-12 col-lg-6 bg-lgray d-flex align-items-center py-3">
                 <div class="w-50 mx-auto d-block py-5">
@@ -371,12 +374,6 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <!-- <div class="col">
-                                <a class="btn-releases bg-releases btn bg-lgray text-white btn btn-block rounded-0 p-3 w-100 d-none d-block d-xl-none m-0 mt-2"
-                                    role="button" href="">
-                                    SIGN UP
-                                </a>
-                            </div> -->
                             <div class="col bg-signup d-none d-block d-xl-none mt-2">
                                 <ul class="navbar-nav mx-auto text-white align-items-center">
                                     <li>
@@ -388,7 +385,6 @@
                                 </ul>
                             </div>
                         </div>
-
                         <div class="row">
                             <div class="col d-flex justify-content-between align-items-center pt-3">
                                 <i class="fa-brands fa-bandcamp text-white fa-2x pr-1"></i>
@@ -406,7 +402,7 @@
     </div>
 
     <!-- Submit Demo / Email Subscription sections XL screens -->
-    <div class="container-fluid h-75 d-none d-xl-block" id="ourMissionXS">
+    <div class="container-fluid h-75 d-none d-xl-block" id="demosXL">
         <div class="row h-100">
             <div class="col-12 col-lg-6 bg-lgray d-flex align-items-center py-3">
                 <div class="w-50 mx-auto d-block py-5 mb-5">
@@ -425,14 +421,39 @@
                     <p class="mission-body">
                         We look forward to listening!
                     </p>
+
+                    <!-- Button trigger modal -->
                     <ul class="navbar-nav text-white align-items-start">
                         <li>
                             <a class="nav-link btn-releases btn bg-black text-white btn-lg btn-block rounded-0 p-3 px-5 mt-2 d-none d-xl-block m-0"
-                                role="button" href="">
+                                role="button" type="button" data-toggle="modal" data-target="#submitDemo">
                                 SUBMIT
                             </a>
                         </li>
                     </ul>
+
+                    <!-- large modal -->
+                    <div class="modal fade" id="submitDemo" tabindex="-1" role="dialog" aria-labelledby="basicModal"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content rounded-0">
+                                <div class="modal-header">
+                                    <h4 class="modal-title" id="myModalLabel">Large Modal</h4>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Modal Body</h3>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="col-12 col-lg-6 bg-dgray d-flex pb-2">
@@ -497,13 +518,13 @@
                     <a class="footer-body text-white pt-5" href="releases.html">
                         releases<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="tour.html">
                         tour<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="demos.html">
                         demos<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="shop.html">
                         shop<br />
                     </a>
                 </div>
@@ -518,7 +539,7 @@
                         email us
                         <br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" type="button" data-toggle="modal" data-target="#submitDemo">
                         submit demo
                         <br />
                     </a>
@@ -599,13 +620,13 @@
                     <a class="footer-body text-white pt-5" href="releases.html">
                         releases<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="tour.html">
                         tour<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="demos.html">
                         demos<br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" href="shop.html">
                         shop<br />
                     </a>
                 </div>
@@ -620,7 +641,7 @@
                         email us
                         <br />
                     </a>
-                    <a class="footer-body text-white">
+                    <a class="footer-body text-white" type="button" data-toggle="modal" data-target="#submitDemo">
                         submit demo
                         <br />
                     </a>

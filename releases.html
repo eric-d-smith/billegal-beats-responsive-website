@@ -8,11 +8,17 @@
 
     <!-- build:css css/main.css -->
 
+    <!-- Any polyfill to enable smoothscroll for the JavaScript APIs -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <!-- This package, to apply the smoothscroll to anchor links -->
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
 
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
 
@@ -42,12 +48,13 @@
         <div class="collapse navbar-collapse" id="billegalNavbar">
             <ul class="navbar-nav mx-auto text-white d-flex align-items-center">
                 <li class="nav-item">
-                    <a class="nav-link" href="releases.html">RELEASES</a>
+                    <a class="nav-link active" href="releases.html">RELEASES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="tour.html">TOUR</a>
                 </li>
-                <a class="px-3 py-2 d-none d-sm-block" href="index.html"><img src="img/logo.svg" width="50" height="50" /></a>
+                <a class="px-3 py-2 d-none d-sm-block" href="index.html"><img src="img/logo.svg" width="50"
+                        height="50" /></a>
                 <li class="nav-item">
                     <a class="nav-link" href="demos.html">DEMOS</a>
                 </li>
@@ -61,40 +68,487 @@
         </div>
     </nav>
 
-        <!--
-    <footer class="site-footer">
-        <div class="container">
+    <div class="container-fluid p-5 bg-mgray" id="releases">
+        <div class="row bg-mgray pt-5">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="bakkar.html">
+                    <img class="img-fluid" src="img/albums/Bakkar-Endless-Beginning-EP-Billegal-Beats.jpeg"
+                        alt="Bakkar - Endless Beginning EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Bakkar</span><br />
+                        <span class="album font-weight-normal">Endless Beginning EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="ZZY.html">
+                    <img class="img-fluid" src="img/albums/ZZY-Everything-Is-Wrong.jpeg"
+                        alt="ZZY — Everything Is Wrong EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">ZZY</span><br />
+                        <span class="album font-weight-normal">Everything Is Wrong EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="fennec.html">
+                    <img class="img-fluid" src="img/albums/Fennec-III-Dozo-Sol.jpeg" alt="Fennec III — Dozo Sol EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Fennec III</span><br />
+                        <span class="album font-weight-normal">Dozo Sol EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/Musin-The-Edge-Of-Chaos-EP.jpeg"
+                        alt="Musin — The Edge Of Chaos EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Musin</span><br />
+                        <span class="album font-weight-normal">The Edge Of Chaos EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/Le-Perche-Oreille-Hyver-EP.jpeg"
+                        alt="Le Perche Oreille — Hyver EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Le Perche Oreille</span><br />
+                        <span class="album font-weight-normal">Hyver EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/Sorcinet-Glitch-In-The-Climate.jpeg"
+                        alt="Sorcinet — Glitch In The Climate EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Sorcinet</span><br />
+                        <span class="album font-weight-normal">Glitch In The Climate EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/nervous_testpilot-Information-Technology-EP.jpeg"
+                        alt="nervous_testpilot — Information Technology EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">nervous_testpilot</span><br />
+                        <span class="album font-weight-normal">Information Technology EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/Konstantin-Klem-Breath-Of-The-Earth-EP.jpeg"
+                        alt="Konstantin Klem — Breath Of The Earth EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Konstantin Klem</span><br />
+                        <span class="album font-weight-normal">Breath Of The Earth EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/M-Cubed-Dirt-Magnet-EP.jpeg"
+                        alt="M-Cubed — Dirt Magnet EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">M-Cubed</span><br />
+                        <span class="album font-weight-normal">Dirt Magnet EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/Blanketdragon-Nothing-Isnt-EP.jpeg"
+                        alt="Blanketdragon — Nothing Isn't EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Blanketdragon</span><br />
+                        <span class="album font-weight-normal">Nothing Isn't EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/Purfakt-A-Look-Into-The-Soul.jpeg" alt="Purfakt" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Purfakt</span><br />
+                        <span class="album font-weight-normal">A Look Into The Soul EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/Navaro-Timeline-EP-Billegal-Beats.jpeg"
+                        alt="Navaro — Timeline EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Navaro</span><br />
+                        <span class="album font-weight-normal">Timeline EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/KeyX-As-The-City-Wakes-EP.jpeg"
+                        alt="KeyX — As The City Wakes EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">KeyX</span><br />
+                        <span class="album font-weight-normal">As The City Wakes EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/Purfakt-A-Look-Into-The-Soul.jpeg"
+                        alt="Zohka — Hotobori EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Zohka</span><br />
+                        <span class="album font-weight-normal">Hotobori EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/hullabalo0-portal-potty-EP.jpeg"
+                        alt="Hullabalo0 — Portal Potty EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Hullabalo0</span><br />
+                        <span class="album font-weight-normal">Portal Potty EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/mr-bill-idm-ep.jpeg" alt="Mr. Bill — IDM EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Mr. Bill</span><br />
+                        <span class="album font-weight-normal">IDM EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/bakkar-lifeform-ep.jpeg" alt="Bakkar — Lifeform EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Bakkar</span><br />
+                        <span class="album font-weight-normal">Lifeform EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/Jonah-Hodges-Government-Name-EP.jpeg"
+                        alt="Jonah Hodges — Government Name EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Jonah Hodges</span><br />
+                        <span class="album font-weight-normal">Government Name EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/Cloud-Cluster-Scattered-Vision-EP.jpeg"
+                        alt="Cloud Cluster — cattered Vision EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Cloud Cluster</span><br />
+                        <span class="album font-weight-normal">Scattered Vision EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/premo.-Temporal-Device-EP.jpg"
+                        alt="premo. — Temporal Device EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">premo.</span><br />
+                        <span class="album font-weight-normal">Temporal Device EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/r21freq-fold-ep.jpeg" alt="r21freq — Fold EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">r21freq</span><br />
+                        <span class="album font-weight-normal">Fold EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="musin.html">
+                    <img class="img-fluid" src="img/albums/Tineidae-Slowly-Drown-In-Static.png"
+                        alt="Tineidae — Slowly Drown in Static" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Tineidae</span><br />
+                        <span class="album font-weight-normal">Slowly Drown in Static</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="le-perche-oreille.html">
+                    <img class="img-fluid" src="img/albums/tsu-iterum-ep.png" alt="tsu — Iterum EP" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">tsu</span><br />
+                        <span class="album font-weight-normal">Iterum EP</span>
+                    </p>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 bg-mgray mx-auto d-block pt-5">
+                <a class="EP-hover" href="sorcinet.html">
+                    <img class="img-fluid" src="img/albums/Billegal-Beats-Vol.0.png" alt="Billegal Beats — Vol.0" />
+                    <p class="text-center font-weight-bold pt-4 pb-2">
+                        <span class="artist">Billegal Beats</span><br />
+                        <span class="album font-weight-normal">Vol.0</span>
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Site Footer XL screens -->
+    <footer class="site-footer bg-black text-white d-none d-xl-block">
+        <div class="container pt-3">
+            <div class="row d-flex justify-content-center py-5">
+                <div class="col-3">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            LINKS
+                        </span><br />
+                    </div>
+                    <a class="footer-body text-white pt-5" href="releases.html">
+                        releases<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        tour<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        demos<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        shop<br />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            CONTACT
+                        </span>
+                        <br />
+                    </div>
+                    <a class="footer-body text-white">
+                        email us
+                        <br />
+                    </a>
+                    <a class="footer-body text-white">
+                        submit demo
+                        <br />
+                    </a>
+                </div>
+                <div class="col-3">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            SOCIAL
+                        </span>
+                        <br />
+                        <div class="row pt-4">
+                            <div class="col text-left align-items-center pt-2">
+                                <i class="fa-brands fa-bandcamp text-white fa-1x pr-0 pb-3"></i>
+                                <i class="fa-brands fa-soundcloud text-white fa-1x px-1"></i>
+                                <i class="fa-brands fa-youtube text-white fa-1x pl-1"></i>
+                                <br />
+                                <i class="fa-brands fa-instagram text-white fa-1x pr-2"></i>
+                                <i class="fa-brands fa-facebook-square text-white fa-1x px-1"></i>
+                                <i class="fa-brands fa-twitter text-white fa-1x pl-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            UPDATES
+                        </span>
+                    </div>
+                    <div class="bg-black">
+                        <p class="footer-body text-white">
+                            Subscribe for updates on new releases.
+                        </p>
+                        <form>
+                            <div class="form-group row">
+                                <div class="col">
+                                    <input type="email" class="form-control rounded-0 p-4" id="email" name="email"
+                                        placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col bg-signup mt-0">
+                                    <ul class="navbar-nav mx-auto text-white align-items-center">
+                                        <li>
+                                            <a class="nav-link btn-footer-XL bg-releases btn text-white btn-block mx-auto rounded-0 p-2 w-100 m-0"
+                                                role="button" href="">
+                                                SIGN UP
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
             <div class="row">
-                <div class="col-4 col-sm-2 offset-1">
-                    <h5>Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="aboutus.html">About</a></li>
-                        <li><a href="#">Sites</a></li>
-                        <li><a href="contactus.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-sm-5 text-center">
-                    <h5>Social</h5>
-                    <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i
-                            class="fa fa-instagram"></i></a>
-                    <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i
-                            class="fa fa-facebook"></i></a>
-                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i
-                            class="fa fa-twitter"></i></a>
-                    <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i
-                            class="fa fa-youtube"></i></a>
-                </div>
-                <div class="col-sm-4 text-center">
-                    <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i>
-                        1-206-555-1234</a><br />
-                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i
-                            class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center text-white pb-5">
+                        <img src="img/logo.svg" alt="Billegal Beats" width="25" height="25" />
+                        <span class="footer-body2 pl-2">© Billegal Beats</span>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
--->
+
+    <!-- Site Footer on XS, SM, MD, and LG screens -->
+    <footer class="site-footer bg-black text-white d-none d-block d-xl-none">
+        <div class="container pt-3">
+            <div class="row text-center d-flex justify-content-center py-5">
+                <div class="col-4">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            LINKS
+                        </span><br />
+                    </div>
+                    <a class="footer-body text-white pt-5" href="releases.html">
+                        releases<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        tour<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        demos<br />
+                    </a>
+                    <a class="footer-body text-white">
+                        shop<br />
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="footer-title text-white pb-4">
+                        <span class="underline">
+                            CONTACT
+                        </span>
+                        <br />
+                    </div>
+                    <a class="footer-body text-white">
+                        email us
+                        <br />
+                    </a>
+                    <a class="footer-body text-white">
+                        submit demo
+                        <br />
+                    </a>
+                </div>
+                <div class="col-4">
+                    <div class="footer-title text-white">
+                        <span class="underline">
+                            SOCIAL
+                        </span>
+                        <br />
+                        <div class="row text-center pt-4">
+                            <div class="col align-items-center pt-2">
+                                <i class="fa-brands fa-bandcamp text-white fa-1x pr-0 pb-3"></i>
+                                <i class="fa-brands fa-soundcloud text-white fa-1x px-1"></i>
+                                <i class="fa-brands fa-youtube text-white fa-1x pl-1"></i>
+                                <br />
+                                <i class="fa-brands fa-instagram text-white fa-1x pr-2"></i>
+                                <i class="fa-brands fa-facebook-square text-white fa-1x px-1"></i>
+                                <i class="fa-brands fa-twitter text-white fa-1x pl-2"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BEGIN signup form only on MD and LG screens -->
+                <div class="col d-none d-md-block d-xl-none">
+                    <div class="footer-title text-white text-center pt-5 pb-1">
+                        <span class="underline">
+                            UPDATES
+                        </span>
+                    </div>
+                    <div class="text-center bg-black pt-4">
+                        <p class="footer-body text-white pb-2">
+                            Subscribe for updates on new releases.
+                        </p>
+                        <form>
+                            <div class="w-50 d-bock mx-auto d-block">
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <input type="email" class="form-control rounded-0 p-4" id="email" name="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col bg-signup mt-0">
+                                        <ul class="navbar-nav mx-auto text-white align-items-center">
+                                            <li>
+                                                <a class="nav-link btn-footer bg-releases btn text-white btn-block mx-auto rounded-0 w-100 m-0"
+                                                    role="button" href="">
+                                                    SIGN UP
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END signup form only on MD and LG screens -->
+                <!-- BEGIN signup form only on XS and SM screens -->
+                <div class="col d-none d-block d-md-none">
+                    <div class="footer-title text-white text-center pt-5 pb-1">
+                        <span class="underline">
+                            UPDATES
+                        </span>
+                    </div>
+                    <div class="text-center bg-black pt-4">
+                        <p class="footer-body text-white pb-2">
+                            Subscribe for updates on new releases.
+                        </p>
+                        <form>
+                            <div class="w-75 mx-auto d-block">
+                                <div class="form-group row">
+                                    <div class="col">
+                                        <input type="email" class="form-control rounded-0 p-4" id="email" name="email"
+                                            placeholder="Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col bg-signup mt-0">
+                                        <ul class="navbar-nav mx-auto text-white align-items-center">
+                                            <li>
+                                                <a class="nav-link btn-footer bg-releases btn text-white btn-block mx-auto rounded-0 w-100 m-0"
+                                                    role="button" href="">
+                                                    SIGN UP
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END signup form only on XS and SM screens -->
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center text-white pb-5">
+                        <img src="img/logo.svg" alt="Billegal Beats" width="25" height="25" />
+                        <span class="footer-body2 pl-2">© Billegal Beats</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- build:js js/main.js -->
 
