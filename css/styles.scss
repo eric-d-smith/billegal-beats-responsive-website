@@ -455,3 +455,80 @@ li > a:hover:after {
   animation: bounce 2s infinite;
 }
 // END bouncing CSS arrow fade on scroll
+
+
+
+
+
+// HERO TESTING
+
+// Non relevant styles
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 20px;
+  font-family: sans-serif;
+  color: #6439a9;
+}
+
+.container {
+  padding: 100px 30px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+// Relevant styles
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.copy-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+  .copy-stack__item--left {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      position: relative;
+      z-index: 1; // tells the browser to make this image on top
+  }
+
+  .copy-stack__item--right {
+      float: right;
+      width: 75%;
+  }
+
+@supports (display: grid) {
+  .copy-stack {
+    display: grid;
+    position: relative; // imperative for the overlapping to work
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .copy-stack__item--right {
+    grid-column: 1 / span 8;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .copy-stack__item--right {
+    grid-column: 4 / -1;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .copy-stack__item--left {
+    grid-row: 1;
+    grid-column: 1 / span 8;
+    padding-top: 20%; // slightly arbitrary, keeps proportion once resized
+    width: 100%;
+  }
+}

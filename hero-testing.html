@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- scroll-behavior for legacy browsers that don't support custom CSS properties -->
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- build:css css/main.css -->
+
+    <!-- Any polyfill to enable smoothscroll for the JavaScript APIs -->
+    <script src="https://unpkg.com/smoothscroll-polyfill/dist/smoothscroll.min.js"></script>
+    <!-- This package, to apply the smoothscroll to anchor links -->
+    <script src="https://unpkg.com/smoothscroll-anchor-polyfill"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- endbuild -->
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/glacial-indifference" type="text/css" />
+
+    <title>Billegal Beats</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/logo.svg">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-black sticky-top">
+        <a class="navbar-brand d-sm-none py-2" href="#"><img src="img/logo.svg" width="40" heigh="40"></a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#billegalNavbar">
+            <div class="hamburger" id="hamburger-2">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </button>
+        <div class="collapse navbar-collapse" id="billegalNavbar">
+            <ul class="navbar-nav mx-auto text-white d-flex align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="releases.html">RELEASES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tour.html">TOUR</a>
+                </li>
+                <a class="px-3 py-2 d-none d-sm-block" href="#"><img src="img/logo.svg" alt="Billegal Beats" width="50"
+                        height="50" /></a>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-xl-block" href="#demosXL">DEMOS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link d-none d-block d-xl-none" href="#demos">DEMOS</a>
+                </li>
+                <li class="nav-item mr-4 d-none d-sm-block">
+                    <a class="nav-link" href="shop.html">SHOP</a>
+                </li>
+                <li class="nav-item d-block d-sm-none">
+                    <a class="nav-link" href="shop.html">SHOP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="copy-stack">
+            <div class="copy-stack__item copy-stack__item--left">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/portrait1.jpeg" alt="">
+            </div>
+            <div class="copy-stack__item copy-stack__item--right">
+                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/110238/texture-waves-cropped.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- BG image & logo overlay -->
+    <!-- <div class="bg-hero">
+        <div class="container position-relative h-100">
+            <div class="row h-100">
+                <div class="col">
+                    <img class="mt-logo-xs w-100 p-5 d-block d-md-none mx-auto" src="img/BB-logo-color.png"
+                        alt="Billegal Beats" />
+                    <img class="mt-logo w-75 p-5 d-none d-md-block mx-auto" src="img/BB-logo-color.png"
+                        alt="Billegal Beats" />
+                </div>
+                <div class="col position-absolute d-none d-xl-block">
+                    <h1 class="hero-title-xl text-white position-relative">
+                        BILLEGAL<br />
+                        BEATS
+                    </h1>
+                </div>
+                <div class="col position-absolute d-none d-xl-block">
+                    <h2 class="hero-sub-title-xl text-white position-relative">
+                        a label creating infrastructure<br />
+                        around left-field glitch music
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- build:js js/main.js -->
+
+    <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+    <!-- endbuild -->
+
+</body>
+
+</html>
