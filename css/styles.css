@@ -396,15 +396,11 @@ li > a:hover:after {
   animation: bounce 2s infinite;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
+/*
 
-p {
-  font-size: 20px;
-  font-family: sans-serif;
-  color: #6439a9;
+// Non relevant styles
+* {
+  box-sizing: border-box;
 }
 
 .container {
@@ -414,60 +410,86 @@ p {
   max-width: 900px;
 }
 
+// Relevant styles
+
 img {
   width: 100%;
   display: block;
 }
 
 .copy-stack::after {
-  content: ' ';
-  display: table;
-  clear: both;
-}
+    content: ' ';
+    display: table;
+    clear: both;
+  }
 
-.copy-stack__item--left {
-  float: left;
-  width: 66%;
-  margin-right: -100%;
-  position: relative;
-  z-index: 1;
-}
+  .copy-stack__item--left {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      position: relative;
+      z-index: 1; // tells the browser to make this image on top
+  }
 
-.copy-stack__item--right {
-  float: right;
-  width: 75%;
-}
+  .copy-stack__item--right {
+      float: right;
+      width: 75%;
+  }
 
 @supports (display: grid) {
   .copy-stack {
-    display: -ms-grid;
     display: grid;
-    position: relative;
-    -ms-grid-columns: (1fr)[12];
-        grid-template-columns: repeat(12, 1fr);
+    position: relative; // imperative for the overlapping to work
+    grid-template-columns: repeat(12, 1fr);
   }
+
   .copy-stack__item--right {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 8;
     grid-column: 1 / span 8;
-    -ms-grid-row: 1;
     grid-row: 1;
     width: 100%;
   }
+
   .copy-stack__item--right {
     grid-column: 4 / -1;
-    -ms-grid-row: 1;
     grid-row: 1;
     width: 100%;
   }
+
   .copy-stack__item--left {
-    -ms-grid-row: 1;
     grid-row: 1;
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 8;
     grid-column: 1 / span 8;
-    padding-top: 20%;
+    padding-top: 20%; // slightly arbitrary, keeps proportion once resized
     width: 100%;
   }
+}
+*/
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  width: 100%;
+  max-height: 75%;
+  margin: 0 auto;
+  border: 4px solid green;
+}
+
+.image, .copy-right {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+}
+
+.image {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-column: 2 / 5;
+  padding-top: 10%;
+  margin: 0 auto;
+}
+
+.copy-right {
+  grid-column: 1 / -1;
+  bottom: 25%;
 }
 /*# sourceMappingURL=styles.css.map */
